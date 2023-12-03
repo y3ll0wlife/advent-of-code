@@ -137,7 +137,7 @@ pub fn run(file_name: &str) -> usize {
             let sum = l * r * t * b;
 
             if sum > max {
-                println!("[{}] {} * {} * {} * {} = {}", y, t, l, b, r, sum);
+                //println!("[{}] {} * {} * {} * {} = {}", y, t, l, b, r, sum);
                 max = sum;
             }
         }
