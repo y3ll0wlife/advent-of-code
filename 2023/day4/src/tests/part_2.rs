@@ -1,4 +1,4 @@
-use crate::part_2;
+use crate::{part_2, part_2_sets};
 
 #[test]
 fn part_2_test() {
@@ -10,6 +10,20 @@ fn part_2_test() {
 #[test]
 fn part_2() {
     let part_2 = part_2::run("input.txt");
+    println!("part 2 value: {}", part_2);
+    assert_eq!(part_2, 5921508);
+}
+
+#[test]
+fn part_2_test_sets() {
+    let part_2 = part_2_sets::run("input.txt");
+    println!("part 2 value: {}", part_2);
+    assert_eq!(part_2, 5921508);
+}
+
+#[test]
+fn part_2_sets() {
+    let part_2 = part_2_sets::run("input.txt");
     println!("part 2 value: {}", part_2);
     assert_eq!(part_2, 5921508);
 }
