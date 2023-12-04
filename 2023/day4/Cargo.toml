@@ -1,0 +1,23 @@
+[package]
+name = "day4"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+name = "day4"
+path = "src/lib.rs"
+
+[dependencies]
+regex = "1.10.2"
+
+[dev-dependencies]
+criterion = { version = "0.4", features = ["html_reports"] }
+
+[[bench]]
+name = "part_1"
+harness = false
+
+[[bench]]
+name = "part_2"
+harness = false
