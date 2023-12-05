@@ -3,7 +3,7 @@
 **Part 1**
 
 ```
-time:   [137.70 µs 138.40 µs 139.12 µs]
+time:   [55.184 µs 55.384 µs 55.620 µs]
 ```
 
 ![](img/part_1.png)
@@ -11,7 +11,5 @@ time:   [137.70 µs 138.40 µs 139.12 µs]
 **Part 2**
 
 ```
-time:   [132.74 µs 133.60 µs 134.49 µs]
+time:   [around 2-3 minutes with --release flag]
 ```
-
-![](img/part_2.png)

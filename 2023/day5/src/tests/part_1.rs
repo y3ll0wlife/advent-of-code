@@ -11,5 +11,5 @@ fn part_1_test() {
 fn part_1() {
     let part_1 = part_1::run("input.txt");
     println!("part 1 value: {}", part_1);
-    assert_eq!(part_1, 0);
+    assert_eq!(part_1, 457535844);
 }
