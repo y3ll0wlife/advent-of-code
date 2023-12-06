@@ -7,7 +7,7 @@ fn part_1_test() {
     assert_eq!(test_part_1, 0);
 }
 
-#[test]
+//#[test]
 fn part_1() {
     let part_1 = part_1::run("input.txt");
     println!("part 1 value: {}", part_1);
