@@ -25,12 +25,14 @@ pub fn run(file_name: &str) -> i64 {
                 diffs.push(i)
             }
 
+            diffs.reverse();
+
             diffs
         })
         .collect();
 
     instability_sensor
         .iter()
-        .map(|diffs| diffs.iter().rev().fold(0, |a, b| a + b.last().unwrap()))
+        .map(|diffs| diffs.iter().fold(0, |a, b| a + b.last().unwrap()))
         .sum()
 }
