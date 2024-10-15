@@ -1,0 +1,12 @@
+[package]
+name = "day3"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+name = "day3"
+path = "src/lib.rs"
+
+[dependencies]
+md5 = "0.7.0"
