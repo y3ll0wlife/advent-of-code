@@ -7,15 +7,15 @@ enum Operators {
     Concatenator,
 }
 
-pub fn part2(input: Vec<&str>) -> i64 {
+pub fn part2(input: Vec<&str>) -> u64 {
     let mut total = 0;
     for line in input {
         let (sum, numbers) = line.split_once(": ").unwrap();
-        let sum = sum.parse::<i64>().unwrap();
+        let sum = sum.parse::<u64>().unwrap();
         let numbers = numbers
             .split(" ")
-            .map(|x| x.parse::<i64>().unwrap())
-            .collect::<Vec<i64>>();
+            .map(|x| x.parse::<u64>().unwrap())
+            .collect::<Vec<u64>>();
 
         let operator_iter = (0..(numbers.len() - 1))
             .map(|_| {
@@ -36,7 +36,7 @@ pub fn part2(input: Vec<&str>) -> i64 {
                 .fold(numbers[0], |total, (value, op)| match op {
                     Operators::Addition => total + value,
                     Operators::Multiplication => total * value,
-                    Operators::Concatenator => format!("{}{}", total, value).parse().unwrap(),
+                    Operators::Concatenator => total * 10u64.pow(value.ilog10() + 1) + value,
                 })
                 == sum
             {
