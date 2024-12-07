@@ -1,0 +1,12 @@
+[package]
+name = "day6"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+name = "day6"
+path = "src/lib.rs"
+
+[dependencies]
+regex = "1.11.0"
